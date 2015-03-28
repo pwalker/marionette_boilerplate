@@ -9,3 +9,6 @@ This project depends on the following other projects:
 - [RequireJS](http://requirejs.org/)
 - [Handlebars](http://handlebarsjs.com/)
 - [Bootstrap](http://getbootstrap.com/)
+- [FontAwesome](http://fontawesome.io/)
+
+Hopefully this boilerplate can help you quickly mock up some ideas, or sketch things out, and migrate on to a more mature way to manage these dependencies and serve them up.
