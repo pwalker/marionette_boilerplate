@@ -3,6 +3,9 @@
  */
 
 define(['marionette_dist', 'handlebars'], function(Marionette, Handlebars) {
+
+    console.log("about to override template cache");
+    
     Marionette.TemplateCache.prototype.compileTemplate = function(rawTemplate, options) {
         // use Handlebars.js to compile the template
         return Handlebars.compile(rawTemplate);

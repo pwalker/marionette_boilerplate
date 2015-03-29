@@ -1,13 +1,14 @@
 define(['backbone', 'marionette', 'app/router'], function(Backbone, Marionette, router) {
-    var FlashCardApp = Marionette.Application.extend({
+    var App = Marionette.Application.extend({
         initialize: function(options) {
             console.log('initializing app');
         }
     });
 
-    var app = new FlashCardApp();
+    var app = new App();
 
     app.on('start', function() {
+        debugger;
         app.Router = router;
         Backbone.history.start();
     });

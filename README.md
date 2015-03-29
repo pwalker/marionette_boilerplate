@@ -12,3 +12,11 @@ This project depends on the following other projects:
 - [FontAwesome](http://fontawesome.io/)
 
 Hopefully this boilerplate can help you quickly mock up some ideas, or sketch things out, and migrate on to a more mature way to manage these dependencies and serve them up.
+
+### A command line trick
+
+To help mimick a real server, you can use the following command line trick in python 3:
+
+    python -m http.server 8000
+
+Run it in the same directory as `index.html` to get a super basic webserver running.
