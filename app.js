@@ -6,6 +6,8 @@ requirejs.config({
         underscore: 'lib/underscore',
         backbone: 'lib/backbone',
         marionette: 'lib/backbone.marionette',
+        models: 'app/models',
+        views: 'app/views'
     },
     shim: {
         underscore: {
@@ -25,6 +27,6 @@ requirejs.config({
     }
 });
 
-requirejs(['app/main'], function(app){
+requirejs(['app/main'], function (app) {
     app.start();
 });
