@@ -13,6 +13,10 @@ This project depends on the following other projects:
 
 Hopefully this boilerplate can help you quickly mock up some ideas, or sketch things out, and migrate on to a more mature way to manage these dependencies and serve them up.
 
+### Handlebars
+
+For templating, this project uses handlebars.  In the shim config, we define both a `marionette_dist`, which is the default MarionetteJS file, and a `marionette` which is where any overrides would go.  The only example here is overriding Marionette's `compileTemplate()` as per [the marionette docs](http://marionettejs.com/docs/marionette.templatecache.html#override-template-compilation).  The same pattern of a separate `*_dist` file and regular one could also be used for backbone-relational or any other plugins.
+
 ### A command line trick
 
 To help mimick a real server, you can use the following command line trick in python 3:
