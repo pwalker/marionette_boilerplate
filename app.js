@@ -2,12 +2,14 @@ requirejs.config({
     baseUrl: 'js',
     paths: {
         app: './app',
+        models: 'app/models',
+        views: 'app/views',
         jquery: 'lib/jquery-2.1.3',
         underscore: 'lib/underscore',
         backbone: 'lib/backbone',
-        marionette: 'lib/backbone.marionette',
-        models: 'app/models',
-        views: 'app/views'
+        marionette_dist: 'lib/backbone.marionette',
+        marionette: 'app/marionette',
+        handlebars: 'lib/handlebars-v3.0.0'
     },
     shim: {
         underscore: {
@@ -19,10 +21,7 @@ requirejs.config({
         },
         marionette_dist: {
             deps: ['jquery', 'underscore', 'backbone'],
-            exports: 'Marionette'
-        },
-        handlebars: {
-            exports: 'Handlebars'
+            exports: 'Backbone.Marionette'
         }
     }
 });

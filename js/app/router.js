@@ -9,8 +9,8 @@ define(
                 console.log('routing to home');
 
                 var collection = new SomeCollection(InitialThings);
-                var view = new SomeCollectionView({collection: collection});
-
+                var view = new SomeCollectionView({collection: collection, el: '#app-container'});
+                view.render();
             }
         });
 

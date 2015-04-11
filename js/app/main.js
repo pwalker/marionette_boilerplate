@@ -14,4 +14,5 @@ define(['backbone', 'marionette', 'app/router'], function (Backbone, Marionette,
     });
 
     return app;
+
 });

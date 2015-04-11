@@ -14,7 +14,7 @@ define(['backbone'], function (Backbone) {
     var Something = Backbone.Model.extend({
         idAttribute: 'someAltID',
 
-        default: function () {
+        defaults: function () {
             return {
                 value: 'This is the value',
                 someAltID: makeId()
